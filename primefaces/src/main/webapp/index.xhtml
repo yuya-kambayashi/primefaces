@@ -13,10 +13,19 @@
             <p:panelGrid>
                 <p:row>
                     <p:column>
-                        <p:selectOneMenu id="country" value="#{selectOneMenuBean.country}" editable="true">
+                        <p:outputLabel value="固定のSelectItem"/>
+                    </p:column>
+                    <p:column>
+                        <p:selectOneMenu value="#{selectOneMenuBean.countryName}">
                             <f:selectItem itemLabel="Select One" itemValue=""/>
-                            <f:selectItems value="#{selectOneMenuView.countries}"/>
+                            <f:selectItem itemLabel="Option1" itemValue="Option1"/>
+                            <f:selectItem itemLabel="Option2" itemValue="Option2"/>
+                            <f:selectItem itemLabel="Option3" itemValue="Option3"/>
+                            <p:ajax event="change" update=":frm"/>
                         </p:selectOneMenu>
+                    </p:column>
+                    <p:column>
+                        <p:outputLabel value="#{selectOneMenuBean.countryName}"/>
                     </p:column>
                 </p:row>
                 <p:row>
