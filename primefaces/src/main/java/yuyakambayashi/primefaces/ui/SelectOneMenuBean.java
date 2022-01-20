@@ -33,13 +33,17 @@ public class SelectOneMenuBean implements Serializable {
     @Setter
     private List<String> countryNames;
 
-    //@Getter
+    @Getter
     @Setter
     private String countryName;
 
-    public String getCountryName() {
-        return countryName;
-    }
+    @Getter
+    @Setter
+    private String selectedOption;
+
+    @Getter
+    @Setter
+    private String selectedOptionOtherValue;
 
     /**
      * Creates a new instance of SelectOneMenuBean
