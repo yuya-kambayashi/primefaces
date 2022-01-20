@@ -47,6 +47,20 @@
                 </p:row>
                 <p:row>
                     <p:column>
+                        <p:outputLabel value="StringのList"/>
+                    </p:column>
+                    <p:column>
+                        <p:selectOneMenu value="#{selectOneMenuBean.city}">
+                            <f:selectItems value="#{selectOneMenuBean.cities}"/>
+                            <p:ajax event="change" update=":frm"/>
+                        </p:selectOneMenu>
+                    </p:column>
+                    <p:column>
+                        <p:outputLabel value="#{selectOneMenuBean.city}"/>
+                    </p:column>
+                </p:row>
+                <p:row>
+                    <p:column>
                         <p:outputLabel value="AAAA"/>
                     </p:column>
                 </p:row>

@@ -45,6 +45,14 @@ public class SelectOneMenuBean implements Serializable {
     @Setter
     private String selectedOptionOtherValue;
 
+    @Getter
+    @Setter
+    private String city;
+
+    @Getter
+    @Setter
+    private List<String> cities;
+
     /**
      * Creates a new instance of SelectOneMenuBean
      */
@@ -65,12 +73,11 @@ public class SelectOneMenuBean implements Serializable {
         countries.add(new Country("ANGUILLA", "AI"));
         countries.add(new Country("ALBANIA", "AL"));
 
-        countryNames = new ArrayList<String>();
-        countryNames.add("ANDORRA");
-        countryNames.add("UNITED ARAB EMIRATES");
-        countryNames.add("AFGHANISTAN");
-        countryNames.add("ANTIGUA AND BARBUDA");
-        countryNames.add("ANGUILLA");
-        countryNames.add("ALBANIA");
+        cities = new ArrayList<String>();
+        cities.add("TOKYO");
+        cities.add("OSAKA");
+        cities.add("NAGOYA");
+        cities.add("FUKUOKA");
+
     }
 }
