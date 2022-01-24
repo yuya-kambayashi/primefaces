@@ -21,21 +21,17 @@ import lombok.*;
 @SessionScoped
 public class SelectOneMenuBean implements Serializable {
 
-    @Getter
+    //@Getter
     @Setter
     private List<Country> countries;
+
+    public List<Country> getCountries() {
+        return countries;
+    }
 
     @Getter
     @Setter
     private Country country;
-
-    @Getter
-    @Setter
-    private List<String> countryNames;
-
-    @Getter
-    @Setter
-    private String countryName;
 
     @Getter
     @Setter
@@ -53,13 +49,14 @@ public class SelectOneMenuBean implements Serializable {
     @Setter
     private List<String> cities;
 
+    @Getter
+    @Setter
+    private String countryName;
+
     /**
      * Creates a new instance of SelectOneMenuBean
      */
     public SelectOneMenuBean() {
-
-        country = null;
-        countries = null;
 
         init();
     }
