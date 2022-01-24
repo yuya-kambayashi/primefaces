@@ -96,20 +96,20 @@
                         <p:outputLabel value="StringのList（クラスの属性）を複数列"/>
                     </p:column>
                     <p:column>
-                        <p:selectOneMenu value="#{selectOneMenuBean.countryName}" converter="#{optionConverter}" var="o">
-                            <f:selectItems value="#{selectOneMenuBean.countries}" var="option"
-                                        itemLabel="#{option.name}" itemValue="#{option.name}"/>
+                        <p:selectOneMenu value="#{selectOneMenuBean.countryName}" converter="#{optionConverter}" var="countryName">
+                            <f:selectItems value="#{selectOneMenuBean.countries}" var="country"
+                                        itemLabel="#{country.name}" itemValue="#{country.name}"/>
                             <p:column>
                                 <f:facet name="header">
                                     <h:outputText value="国名"/>
                                 </f:facet>
-                                <h:outputText value="#{o}"/>
+                                <h:outputText value="#{countryName}"/>
                             </p:column>
                             <p:column>
                                 <f:facet name="header">
                                     <h:outputText value="国名"/>
                                 </f:facet>
-                                <h:outputText value="#{o}"/>
+                                <h:outputText value="#{countryName}"/>
                             </p:column>
                             <p:ajax event="change" update=":frm"/>
                         </p:selectOneMenu>
