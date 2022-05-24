@@ -52,6 +52,11 @@ public class SelectOneMenuBean implements Serializable {
     @Getter
     @Setter
     private String countryName;
+    
+    @Getter
+    @Setter
+    private String foobar = "foobar";
+
 
     /**
      * Creates a new instance of SelectOneMenuBean

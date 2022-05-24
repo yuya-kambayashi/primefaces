@@ -14,7 +14,7 @@
         <failOnMissingWebXml>false</failOnMissingWebXml>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <jakarta.jakartaee-api.version>8.0.0</jakarta.jakartaee-api.version>
+        <jakarta.jakartaee-api.version>9.0.0</jakarta.jakartaee-api.version>
         <microprofile.version>3.0</microprofile.version>
         <mockito-core.version>3.1.0</mockito-core.version>
         <junit-jupiter.version>5.5.0</junit-jupiter.version>
@@ -73,8 +73,8 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.9.0</version>
                 <configuration>
-                  <source>1.8</source>
-                  <target>1.8</target>
+                  <source>${maven.compiler.source}</source>
+                  <target>${maven.compiler.target}</target>
                 </configuration>
             </plugin>
             <plugin>
