@@ -5,6 +5,7 @@
  */
 package yuyakambayashi.primefaces.ui;
 
+//import jakarta.inject.Named;
 import javax.inject.Named;
 import javax.enterprise.context.SessionScoped;
 import java.io.Serializable;
@@ -12,6 +13,9 @@ import java.util.ArrayList;
 import java.util.List;
 import yuyakambayashi.primefaces.model.Country;
 import lombok.*;
+import yuyakambayashi.primefaces.database.MstUserTypeRepository;
+//import jakarta.inject.Inject;
+import javax.inject.Inject;
 
 /**
  *
@@ -56,6 +60,9 @@ public class SelectOneMenuBean implements Serializable {
     @Getter
     @Setter
     private String foobar = "foobar";
+    
+//    @Inject
+//    protected MstUserTypeRepository mstRuntimeRepo;
 
 
     /**
