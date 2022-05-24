@@ -82,4 +82,10 @@ public class SelectOneMenuBean implements Serializable {
         cities.add("FUKUOKA");
 
     }
+    
+    public String getMessage(){
+        
+        return "Hello World";
+        
+    }
 }
