@@ -13,9 +13,7 @@ import java.util.ArrayList;
 import java.util.List;
 import yuyakambayashi.primefaces.model.Country;
 import lombok.*;
-import yuyakambayashi.primefaces.database.MstUserTypeRepository;
-//import jakarta.inject.Inject;
-import javax.inject.Inject;
+import yuyakambayashi.primefaces.ui.AbstractBaseBean;
 
 /**
  *
@@ -23,7 +21,7 @@ import javax.inject.Inject;
  */
 @Named(value = "selectOneMenuBean")
 @SessionScoped
-public class SelectOneMenuBean implements Serializable {
+public class SelectOneMenuBean extends AbstractBaseBean implements Serializable {
 
     //@Getter
     @Setter

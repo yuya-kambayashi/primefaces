@@ -14,6 +14,6 @@ import yuyakambayashi.primefaces.database.MstUserTypeRepository;
  */
 public abstract class AbstractBaseBean implements Serializable {
  
-    //@Inject
-   // protected MstUserTypeRepository mstRuntimeRepo;
+    @Inject
+    protected MstUserTypeRepository mstRuntimeRepo;
 }
