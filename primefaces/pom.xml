@@ -14,7 +14,7 @@
         <failOnMissingWebXml>false</failOnMissingWebXml>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <jakarta.jakartaee-api.version>9.0.0</jakarta.jakartaee-api.version>
+        <jakarta.jakartaee-api.version>10.0.0</jakarta.jakartaee-api.version>
         <microprofile.version>3.0</microprofile.version>
         <mockito-core.version>3.1.0</mockito-core.version>
         <junit-jupiter.version>5.5.0</junit-jupiter.version>
@@ -58,7 +58,7 @@
         <dependency>
             <groupId>org.primefaces</groupId>
             <artifactId>primefaces</artifactId>
-            <version>10.0.0</version>        
+            <version>12.0.0-RC3</version>        
         </dependency>
         <dependency>
             <groupId>org.projectlombok</groupId>
